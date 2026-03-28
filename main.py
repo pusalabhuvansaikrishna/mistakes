@@ -45,7 +45,7 @@ uploaded_files = st.file_uploader(
 if uploaded_files:
     st.success(f"✅ {len(uploaded_files)} file(s) uploaded")
 
-    if st.button("🚀 Start Parallel Processing", type="primary", use_container_width=True):
+    if st.button("🚀 Start Processing", type="primary", use_container_width=True):
 
         results = {}
         progress_bar = st.progress(0)
@@ -101,5 +101,3 @@ if uploaded_files:
             st.warning("No output files were generated.")
 else:
     st.info("👆 Upload your CSV files containing URL column to start.")
-
-st.caption("Fixed for Indian Languages (Sanskrit/Hindi/Telugu etc.) using UTF-8-SIG")
